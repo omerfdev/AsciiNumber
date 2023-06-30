@@ -6,6 +6,7 @@ namespace AsciiNumber
     {
         public delegate void asciiCodeDelegate();
         public static asciiCodeDelegate AsciiCodedelegate = AsciiCode;
+        #region Binary Code Method
         static void AsciiCode()
         {
             int number = int.Parse(Console.ReadLine());
@@ -18,6 +19,7 @@ namespace AsciiNumber
             Console.Write(binaryCode);
 
         }
+        #endregion
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello,Ascii World!");
